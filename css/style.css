@@ -1,0 +1,106 @@
+li.editing input.toggle {
+    display: none;
+}
+
+li.editing label {
+    display: none;
+}
+
+li.editing input.edit{
+    display:block;
+}
+
+li input.edit{
+    display: none;
+}
+
+li {
+    padding: 18px 20px 18px 0;
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #eeeeee;
+    color: #333333;
+    width: 520px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+a.destroyButton {
+    cursor: pointer;
+    position: absolute;
+    background-color: yellow;
+    right: 5px;
+    top: 0px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    background: url(images/remove.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+a.editButton {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    background: url(images/edit.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+a.upButton {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    background: url(images/up.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+a.downButton{
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    background: url(images/down.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+li.todoView {
+list-style: none;
+    margin: 5px;
+    padding: 10;
+}
+
+ul.todosView {
+    margin: 10;
+    padding: 0;
+}
+
+label.shortDateFormat {
+    font-size: 10px;
+}

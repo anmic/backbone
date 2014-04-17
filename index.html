@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="tasksBoard">
+    <div class="tasks">
+
+    </div>
+    <div>
+        <footer></footer>
+    </div>
+    <div id="taskManagment">
+        <input type="text" id="newTask" placeholder="Ваша новая задача">
+        <input type="button" id="addTask" value="Добавить нове задание">
+    </div>
+    <div>
+        <input type="button" value="Удалить заверешеные задачи" id="removeDone">
+    </div>
+</div>
+
+
+ <!-- Шаблон представления задания -->
+<script type="text/template" id="taskTemplate">
+    <input type="checkbox" class='toggle' <%= done ? 'checked="checked"' : ' ' %> >
+    <label class="titleLabel"><%= title %></label>
+    <label class="shortDateFormat"><%= createTime %></label>
+    <a class="upButton"><a>
+    <a class="downButton"><a>
+    <a class="editButton"><a>
+    <a class="destroyButton"></a>
+    <input class="edit" type="text" value="<%= title %>">
+</script>
+
+<!-- Шаблон нижнего колонтитула -->
+<script type="text/template" id="footerTemplate">
+    <% if (done) { %>
+        <b><%= done %></b> <% done==1 ? "item" : "items" %>  complete
+    <% } %>
+    <% if (remaining) { %>
+        <b><%= remaining %></b> <% remaining==1 ? "item" : "items" %>  remain
+    <% } %>    
+</script>
+
+<script src="js/underscore.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/backbone.js"></script>
+<script src="js/localstorage.js"></script>
+<script src="js/jqueryDateFormat.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
